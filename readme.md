@@ -11,27 +11,27 @@ This repository analyzes both the **technical** and **probabilistic** foundation
 
 ---
 
-## 🧩 Key Topics Covered
+## Key Topics Covered
 
-### 🎯 Game Mechanics & Determinism
+### Game Mechanics & Determinism
 
 - Implementation of **deterministic physics** for a “Plinko-style” gambling game.
 - Ball simulation with **gravity, friction, and collision** on an HTML `<canvas>`.
 - Ensuring consistent results across devices using **frame-based rendering** (time-independent simulation).
 
-### 🔒 Security & Hackability
+### Security & Hackability
 
 - Understanding **why client-side games are hackable** (due to exposed JavaScript logic).
 - Explanation of **why the backend must always be the source of truth** for fairness.
 - Strategies for **server reconciliation** — verifying user actions (direction, time, etc.) without trusting client input.
 
-### 🧮 Probabilities & Casino Advantage
+### Probabilities & Casino Advantage
 
 - Deep dive into **odds stacking** — how casinos design payout systems to ensure profitability.
 - Example: A 3% increase in winning bets is insufficient to offset long-term loss probability (≈ 1/25).
 - Demonstration of **mathematical expectation** leading to guaranteed casino profit in the long run.
 
-### ⚙️ Backend Simulation & Control
+### Backend Simulation & Control
 
 - Pre-computation of **ball drop paths** to map multipliers and outcomes.
 - Backend API controlling:
@@ -41,13 +41,13 @@ This repository analyzes both the **technical** and **probabilistic** foundation
 
 - Deterministic game design ensures **repeatable simulations** for verification and fairness audits.
 
-### 🧱 Frontend Rendering
+### Frontend Rendering
 
 - Built using **HTML + Canvas** for performant and dynamic animation.
 - Continuous rendering with `requestAnimationFrame` for smooth playback.
 - Visual simulation of balls, obstacles, and sinks (multiplier slots).
 
-### 🧮 Physics Engine
+### Physics Engine
 
 - Controlled parameters:
   - Gravity (realistic vertical acceleration)
@@ -58,7 +58,7 @@ This repository analyzes both the **technical** and **probabilistic** foundation
 
 ---
 
-## 🔁 Client–Server Architecture
+## Client–Server Architecture
 
 | Component             | Responsibility                                            | Security Role                |
 | --------------------- | --------------------------------------------------------- | ---------------------------- |
@@ -69,7 +69,7 @@ This repository analyzes both the **technical** and **probabilistic** foundation
 
 ---
 
-## 🧠 Determinism & Fairness
+## Determinism & Fairness
 
 Deterministic systems ensure:
 
@@ -85,7 +85,7 @@ Deterministic systems ensure:
 
 ---
 
-## 🎲 Probability of Losing
+## Probability of Losing
 
 | Factor              | Description                                                                     |
 | ------------------- | ------------------------------------------------------------------------------- |
@@ -97,7 +97,7 @@ Deterministic systems ensure:
 
 > In the long run, players always lose — not due to rigging, but due to statistical inevitability.
 
-## 🧩 Learning Outcomes
+## Learning Outcomes
 
 - How client–server synchronization prevents cheating.
 - How casinos maintain profitability through probability theory.
